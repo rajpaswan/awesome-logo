@@ -1,0 +1,22 @@
+These are the list of keywords/expressions for turtle... 
+ 
+home                                              - returns to home position
+cs                                                - clear screen
+pu                                                - pen up
+pd                                                - pen down 
+ht                                                - hide turtle
+st                                                - show turtle
+fd <distance>                                     - moves forward
+bk <distance>                                     - moves backward
+rt <degrees>                                      - turns right
+lt <degrees>                                      - turns left
+pc <color name>                                   - changes pen color
+bg <color name>                                   - changes background color
+str <pen thickness>                               - changes pen thickness
+wt <text>                                         - writes the text at the current position
+fs <font size>                                    - changes font size
+repeat <times> [<some code>]                      - repeats the code given number of times 
+to <procedure name> [<some code>]                 - defines a procedure
+var <variable name> = <value>                     - creates a variable with given value
+<procedure name>                                  - calls the procedure
+[<expression>]                                    - evaluates the expression
