@@ -1,0 +1,1 @@
+var x = 1htstr 3repeat 200 [ fd x rt 50 [ x = x + 1 ] ]rt 60

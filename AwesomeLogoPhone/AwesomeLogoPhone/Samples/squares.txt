@@ -1,0 +1,1 @@
+pc redvar x =1repeat 8[    [x = 10]    repeat 36    [        fd x        rt 90        [x=x+10]    ]    home    rt 45]

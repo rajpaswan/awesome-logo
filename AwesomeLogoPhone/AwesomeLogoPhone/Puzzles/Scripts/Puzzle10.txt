@@ -1,0 +1,1 @@
+﻿fd 100 rt 45 fd 100 rt 135 fd 170 lt 90 fd 200 rt 135 fd 150 rt 45 fd 500 rt 45 fd 150 rt 135 fd 200 lt 90 fd 60 rt 90 fd 60 rt 90 fd 60 lt 90 fd 180

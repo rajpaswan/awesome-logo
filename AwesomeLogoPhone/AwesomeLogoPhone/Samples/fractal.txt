@@ -1,0 +1,1 @@
+to v [ fd 3 ]to w [ v lt 60 v rt 120 v lt 60 v ]to x [ w lt 60 w rt 120 w lt 60 w ]to y [ x lt 60 x rt 120 x lt 60 x ]to z [ y lt 60 y rt 120 y lt 60 y ]ht pu bk 260 pdrt 60str 5repeat 6 [ z lt 60 ]

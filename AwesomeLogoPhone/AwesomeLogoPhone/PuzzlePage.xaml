@@ -1,0 +1,37 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AwesomeLogoPhone.PuzzlePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" Foreground="White">
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar x:Name="appbar" ForegroundColor="#FF00A77B" Mode="Default" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="prev_button" IconUri="/Assets/AppBar/back.png" Text="prev" Click="prev_button_Click"/>
+            <shell:ApplicationBarIconButton x:Name="tryagain_button" IconUri="/Assets/AppBar/refresh.png" Text="try again" Click="tryagain_button_Click"/>
+            <shell:ApplicationBarIconButton x:Name="next_button" IconUri="/Assets/AppBar/next.png" Text="next" Click="next_button_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="#ff00a77b">
+        <TextBlock x:Name="title_block" HorizontalAlignment="Left" TextWrapping="Wrap" Text="puzzle #1" VerticalAlignment="Top" Foreground="Black" Margin="10,10,10,0" FontSize="36" FontWeight="Bold" FontFamily="Consolas"/>
+        <Canvas x:Name="puzzle_canvas" Width="400" Height="400" Cursor="Hand" RenderTransformOrigin="0.5,0.5" Margin="40,148,40,220">
+            <Canvas.RenderTransform>
+                <CompositeTransform ScaleX="0.6" ScaleY="0.6"/>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <TextBlock x:Name="position_block" HorizontalAlignment="Right" TextWrapping="Wrap" Text="(0,0):90" VerticalAlignment="Top" Margin="0,10,9.573,0" FontFamily="Consolas" Foreground="Black" FontSize="24" FontWeight="Bold"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Background="#FF1F1F1F">
+            <TextBox x:Name="shell_box" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="consolas" FontSize="20" Width="413" BorderThickness="2" SelectionForeground="White" Foreground="Black" BorderBrush="#FF00A77B" Background="#FF00A77B" KeyUp="shell_box_KeyUp"/>
+            <Button x:Name="ok_button" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ok_button_Click" FontFamily="Segoe UI Symbol" BorderThickness="2" Content="&#xE0E7;" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00A77B" FontSize="20"/>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,1 @@
+pc greenpu htvar x=1repeat 400[fd x fs x wt 0 rt 10 [x=x*1.01] fd x fs x wt 1 rt 10]

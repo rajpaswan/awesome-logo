@@ -1,0 +1,1 @@
+to square [	repeat 4 [		fd 200		lt 90	]]to box [	str 10	square	pu	rt 90	fd 20	pd]to ms [	pc red box	pc green box	pc yellow box	pc blue box	pu ht	bk 240	pc white	bg black	wt MICROSOFT	pd]pu fd 20 pd ms ht

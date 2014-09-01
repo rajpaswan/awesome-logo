@@ -1,0 +1,12 @@
+﻿mov -30 50 wt 100
+mov 20 150 wt 100
+mov 50 120 wt 45°
+mov 100 80 wt 170
+mov 170 20 wt 200
+mov 230 -20 wt 45°
+mov 240 -60 wt 150
+mov -85 -85 wt 500
+mov -320 -85 wt 135°
+mov -340 20 wt 200
+mov -210 30 wt 60
+mov -90 20 wt 180

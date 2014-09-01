@@ -1,0 +1,1 @@
+to poly [ repeat 10 [ fd 100 rt [360/10] ] ]to pattern [ repeat 20 [ poly rt [360/20] ] ]pc redstr 5pattern

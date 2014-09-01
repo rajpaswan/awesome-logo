@@ -1,0 +1,1 @@
+rt 90 fd 100 lt 60 fd 150 rt 120 fd 150 lt 60 fd 100

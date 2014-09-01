@@ -1,0 +1,1 @@
+to heart [	lt 45 fd 400	repeat 18 [ fd 28 rt 10 ]	fd 112	pu rt 45 fd 450 lt 180 pd	rt 45 fd 400	repeat 18 [ fd 28 lt 10 ]	fd 112	pu lt 45 fd 450 rt 180 pd]str 10pc redht pu bk 300 pdheart rt 30

@@ -1,0 +1,38 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AwesomeLogoPhone.TurtlePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar ForegroundColor="Orange" IsMenuEnabled="True" Mode="Default">
+            <shell:ApplicationBarIconButton x:Name="clear_button" IconUri="/Assets/AppBar/cancel.png" Text="clear" Click="clear_button_Click"/>
+            <shell:ApplicationBarIconButton x:Name="repeat_button" IconUri="/Assets/AppBar/refresh.png" Text="repeat" Click="repeat_button_Click"/>
+            <shell:ApplicationBarIconButton x:Name="zoomin_button" IconUri="/Assets/AppBar/new.png" Text="zoom in" Click="zoomin_button_Click"/>
+            <shell:ApplicationBarIconButton x:Name="zoomout_button" IconUri="/Assets/AppBar/minus.png" Text="zoom out" Click="zoomout_button_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Orange">
+        <Canvas x:Name="turtle_canvas" Width="400" Height="400" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <CompositeTransform ScaleX="0.6" ScaleY="0.6"/>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <TextBlock x:Name="position_block" HorizontalAlignment="Right" TextWrapping="Wrap" Text="(0,0):90" VerticalAlignment="Top" Margin="0,10,10,0" FontFamily="Consolas" Foreground="Black" FontSize="24" FontWeight="Bold"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Background="#FF1F1F1F" Margin="0">
+            <TextBox x:Name="shell_box" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="consolas" FontSize="20" Width="413" BorderThickness="2" SelectionForeground="White" Foreground="Black" BorderBrush="Orange" Background="Orange" KeyUp="shell_box_KeyUp"/>
+            <Button x:Name="ok_button" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ok_button_Click" FontFamily="Segoe UI Symbol" BorderThickness="2" Content="&#xE0E7;" Background="#FF212021" BorderBrush="{x:Null}" Foreground="Orange" FontSize="20"/>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

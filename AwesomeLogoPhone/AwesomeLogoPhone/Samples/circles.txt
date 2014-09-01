@@ -1,0 +1,1 @@
+repeat 20 [	repeat 20 [		fd 50 rt 18 	]	rt 18]ht pufd 300pd rt 60

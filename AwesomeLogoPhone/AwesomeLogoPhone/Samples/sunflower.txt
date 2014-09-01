@@ -1,0 +1,1 @@
+to first [repeat 9[fd 24 rt 10]]to second [repeat 9[fd 12 lt 10]]to petal [repeat 2 [first second rt 180]]to sunflower [repeat 18 [petal rt 20]]str 5sunflower rt 1
